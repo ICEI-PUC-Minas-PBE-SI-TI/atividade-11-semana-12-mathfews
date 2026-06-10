@@ -35,6 +35,34 @@
         transform: translateY(-1px);
     }
 }
+.filter-section {
+    margin-left: 10px;
+    margin-top: 12px;
+    select {
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.274);
+        padding: 8px 12px;
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.05);
+        color: #e3e3e3;
+        font-size: 0.95em;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        font-family: "Inter", sans-serif;
+    }
+    select:hover {
+        border-color: #52c9e7;
+        background-color: rgba(3, 157, 196, 0.1);
+    }
+    select:focus {
+        border-color: #52c9e7;
+        box-shadow: 0 0 10px rgba(82, 201, 231, 0.3);
+    }
+    option {
+        background-color: #1a1a1a;
+        color: #e3e3e3;
+    }
+}
 
 body {
     font-family: "Inter", sans-serif;

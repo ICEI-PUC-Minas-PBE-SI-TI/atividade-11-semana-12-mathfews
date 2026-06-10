@@ -18,7 +18,16 @@
             <input type="text" placeholder="Buscar filmes...">
             <button id="search-button">Pesquisar</button>
         </div>
-        <p class="catalog-title">Filmes Populares</p>
+        <div class="filter-section">
+            <select id="filter-select">
+                <option value="popular">Filmes Populares</option>
+                <option value="top_rated">Melhor Avaliados</option>
+                <option value="release_date_desc">Mais Recentes</option>
+                <option value="release_date_asc">Mais Antigos</option>
+                <option value="vote_average">Maior Nota</option>
+            </select>
+        </div>
+        <p class="catalog-title" id="catalog-title">Filmes Populares</p>
         <div class="card-section">
     </main>
 </body>
