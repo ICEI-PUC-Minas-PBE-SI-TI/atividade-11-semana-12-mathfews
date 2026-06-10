@@ -1,0 +1,336 @@
+body {
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle at center, #08090d 0%, #000000 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    padding: 40px 40px 60px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.detalhes-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#capa {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+#capa:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2.3em;
+}
+
+button {
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    width: 100%;
+}
+#titulo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+.ano {
+    opacity: 0.5;
+    font-size: 0.8em;
+    font-weight: 300;
+    display: inline;
+    align-self: center;
+}
+
+.info-container, .info_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
+    flex: 1;
+}
+#description {
+    text-align: justify;
+    width: 100%;
+    line-height: 1.6;
+    margin: 0;
+}
+.genres {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    li {
+        list-style: none;
+        padding: 3px 6px;
+        border-radius: 5px;
+        background-color: #52c9e752;
+        font-weight: bold;
+    }
+}
+.nota-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#nota {
+    margin: 0;
+}
+.estrela {
+    width: 2em;
+    height: 2em;
+    color: #1795df;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+}
+.autores-envolvidos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.autores-envolvidos h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: #e3e3e3;
+}
+
+.autores-envolvidos ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px 15px;
+}
+
+.autores-envolvidos li {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.autor-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, font-weight 0.2s ease;
+    text-align: center;
+    width: 90px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+.autor-link:hover {
+    font-weight: 700;
+    transform: translateY(-2px);
+}
+
+.autores-envolvidos img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #52c9e796;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(82, 201, 231, 0.05);
+    border: 1px solid rgba(82, 201, 231, 0.15);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-voltar svg {
+    width: 18px;
+    height: 18px;
+    transition: transform 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: rgba(82, 201, 231, 0.15);
+    border-color: #52c9e7;
+    color: white;
+}
+
+.btn-voltar:hover svg {
+    transform: translateX(-2px);
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 40px 30px 60px 30px;
+    }
+    
+    .detalhes-wrapper {
+        width: 100%;
+    }
+    
+    .container {
+        gap: 30px;
+    }
+    
+    #capa {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px 15px 50px 15px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .detalhes-wrapper {
+        width: 100%;
+        align-items: center;
+    }
+    
+    #titulo {
+        font-size: 1.8rem;
+        flex-direction: column;
+        width: 80dvw;
+        gap: 5px;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .ano {
+        align-self: center;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+    
+    .foto-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #capa {
+        width: 60dvw;
+        max-width: 280px;
+    }
+    
+    .info-container, .info_container {
+        width: 100%;
+        align-items: center;
+        gap: 18px;
+    }
+    
+    #description {
+        width: 80%;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    .genres {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 15px;
+    }
+    
+    .nota-container {
+        justify-content: center;
+    }
+    
+    .autor-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        gap: 6px;
+    }
+    .autores-envolvidos {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        padding-left: 10dvw;
+    }
+    .autores-envolvidos img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    .autores-envolvidos h2 {
+        margin-bottom: 20px;
+    }
+    
+    .btn-voltar {
+        margin-left: 20px;
+    }
+    .elenco > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .diretor,
+    .elenco {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .diretor h2,
+    .elenco h2 {
+        text-align: start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #capa {
+        width: 75dvw;
+    }
+}
