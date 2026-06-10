@@ -4,8 +4,8 @@ Nesta atividade, vamos trabalhar com uma API de mercado para montar uma interfac
 
 ## Informações Gerais
 
-- Nome:
-- Matrícula:
+- Nome: Matheus Felipe Costa William
+- Matrícula: 927495
 
 ## Prints do trabalho
 
