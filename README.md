@@ -4,12 +4,11 @@ Nesta atividade, vamos trabalhar com uma API de mercado para montar uma interfac
 
 ## Informações Gerais
 
-- Nome: Matheus Felipe Costa William
+- Nome: Matheus Felipe Costa William.
 - Matrícula: 927495
 
 ## Prints do trabalho
 
-<<  COLOQUE A IMAGEM - LISTA DE CARDS COM FILMES - AQUI >>
+![alt text](public/assets/image.png)
 
-<<  COLOQUE A IMAGEM - RESULTADO DE UMA PESQUISA - AQUI >>
-
+![alt text](public/assets/image2.png)
