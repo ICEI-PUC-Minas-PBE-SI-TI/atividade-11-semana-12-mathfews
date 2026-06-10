@@ -1,6 +1,6 @@
 const card_section = document.querySelector(".card-section");
-
-function createCard(obj) {
+const api_key = "51bcbad4f2055cf1999bac7cb6ab10de"
+function createMovieCard(obj) {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
@@ -12,7 +12,16 @@ function createCard(obj) {
     });
     card_section.appendChild(card);
 }
-
-catalogo.forEach((filme) => {
-    createCard(filme);
-});
+async function melhoresAvaliados() {
+    const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${api_key}&language=pt-BR&page=1`;
+    const response = await fetch(url);
+    const data = await response.json();
+    data.results.forEach((obj) => {
+        createMovieCard({
+            id: obj.id,
+            titulo: obj.title,
+            capa: `https://image.tmdb.org/t/p/w500${obj.poster_path}`,
+        });
+    });
+}
+melhoresAvaliados();
